@@ -33,7 +33,7 @@ public class TestingPublisher {
 	    }
 
 	    private void start() {
-
+	    	System.out.println("control in the start method");
 	        try {
 	            MqttConnectOptions options = new MqttConnectOptions();
 	            options.setCleanSession(false);
@@ -90,7 +90,7 @@ public class TestingPublisher {
 		// TODO Auto-generated method stub
 		
 	
-		 final Publisher publisher = new Publisher();
+		 final TestingPublisher publisher = new TestingPublisher();
 //       System.out.println("publisher client id is: "+publisher.clientId);
        publisher.start();
 		
