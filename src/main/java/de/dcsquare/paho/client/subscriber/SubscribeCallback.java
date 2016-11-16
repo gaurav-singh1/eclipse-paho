@@ -19,7 +19,7 @@ public class SubscribeCallback implements MqttCallback {
 	public void messageArrived(String topic, MqttMessage message) throws Exception {
 		System.out.println("Message arrived. Topic: " + topic + "  Message: " + message.toString());
 
-		File file = new File("/Users/gaurav/Desktop/BrokerMessages.txt");
+		File file = new File("/home/rq/rocq/logs/BrokerMessages.txt");
 		if (!file.exists()) {
 			file.createNewFile();
 		}
@@ -34,7 +34,7 @@ public class SubscribeCallback implements MqttCallback {
 		bw.write("\n");
 		bw.close();
 
-		System.out.println("Done");
+//		System.out.println("Done");
 
 		if ("testing/LWT".equals(topic)) {
 			System.err.println("Sensor gone!");
