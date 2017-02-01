@@ -19,7 +19,7 @@ public class SubscribeCallback implements MqttCallback {
 	public void messageArrived(String topic, MqttMessage message) throws Exception {
 		System.out.println("Message arrived. Topic: " + topic + "  Message: " + message.toString());
 
-		File file = new File("/home/rq/rocq/logs/BrokerMessages.txt");
+		File file = new File("/home/vagrant/Testing_Happy/loadtestingMQTT/BrokerMessages.txt");
 		if (!file.exists()) {
 			file.createNewFile();
 		}
