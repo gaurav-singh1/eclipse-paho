@@ -14,7 +14,7 @@ public class Subscriber_Testing {
 
     public static final String BROKER_URL = "tcp://144.76.122.130:1883";
 
-	private static final int CLIENT_TO_SUBSCRIBE = 15000;
+	private static final int CLIENT_TO_SUBSCRIBE = 10000;
 	
 	//private static final String clientId;
 
